@@ -1,0 +1,60 @@
+-- Database: create_tables
+
+-- DROP DATABASE IF EXISTS create_tables;
+INSERT INTO movie(
+	movie_title, 
+	movie_rating,   
+	movie_length 
+
+)VALUES(
+	'Coding Temple The Movie',
+	'PG',
+     110
+);
+
+INSERT INTO ticket(
+	ticket_id,
+	seat,
+	movie_title
+
+)VALUES(
+	1,
+	15,
+	'Coding Temple The Movie'
+);
+
+INSERT INTO customer(
+	customer_id,
+	first_name,
+	last_name,
+	ticket_id 
+
+)VALUES(
+	100,
+	'Maddy',
+	'Boudreau',
+	1
+);
+
+INSERT INTO concession(
+	order_no,
+	item,
+	price
+
+)VALUES(
+	1,
+	'Popcorn',
+	5.00
+), (
+    2,
+    'Soda',
+    2.00
+), (
+    3,
+    'Candy',
+    3.00
+), (
+    4,
+    'Extra butter',
+    .50
+)
